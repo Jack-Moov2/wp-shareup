@@ -1,0 +1,28 @@
+/**
+* -----------------------------------------------------------------------------
+* $FOOTER
+* -----------------------------------------------------------------------------
+*/
+
+footer {
+    padding: $base-unit * 2;
+
+    text-align: center;
+
+    color: $color-secondary;
+    background: $color-primary;
+
+    & a {
+        color: $color-secondary;
+
+        font-weight: $font-weight--bold;
+
+        &:hover, &:active {
+            color: lighten($color-secondary, 5%);
+        }
+    }
+
+    & p {
+        margin-bottom: $base-unit;
+    }
+}

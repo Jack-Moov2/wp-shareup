@@ -1,0 +1,41 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $EVENTS
+ * -----------------------------------------------------------------------------
+ */
+
+.events {
+    & nav {
+        text-align: center;
+        margin-bottom: $base-unit * 2;
+
+        @include tablet {
+            text-align: left;
+        }
+    }
+
+    & img[src$=".svg"] {
+        width: 20%;
+        max-width: 50px;
+        margin-left: $base-unit;
+        margin-right: $base-unit;
+
+        @include tablet {
+            margin-left: 0;
+            margin-right: $base-unit*2;
+        }
+    }
+}
+
+.events__post {
+    border-bottom: 1px solid $color-secondary;
+
+    &:last-child {
+        border-bottom: 1px solid rgba(0,0,0,0);
+    }
+}
+
+.events__logo {
+    text-align: center;
+    margin-bottom: $base-unit*2;
+}

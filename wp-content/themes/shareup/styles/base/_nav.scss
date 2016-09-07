@@ -1,0 +1,25 @@
+/**
+* -----------------------------------------------------------------------------
+* $NAV
+* -----------------------------------------------------------------------------
+*/
+
+nav {
+
+    & ul {
+        padding: 0;
+        padding-right: $base-unit*2;
+        padding-left: $base-unit*2;
+
+        list-style: none;
+
+        & li {
+            @include tablet {
+                display: inline-block;
+
+                margin-right: $base-unit;
+                margin-left: $base-unit;
+            }
+        }
+    }
+}

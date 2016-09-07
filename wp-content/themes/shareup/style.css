@@ -1,0 +1,1115 @@
+/**
+* -----------------------------------------------------------------------------
+* $VARS
+* -----------------------------------------------------------------------------
+*/
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+	Theme Name: ShareUp Soton
+	Theme URI: http://shareupsoton.co.uk
+	Description:
+	Version: 1.0.0
+	Author: Jack Davies (@whatjackhasmade)
+	Author URI: http://whatjackhasmade.co.uk
+	Tags: ShareUp Soton, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+/* global box-sizing */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+/* clear */
+.clear:before,
+.clear:after {
+  content: ' ';
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #FFF;
+  border: 1px solid #F0F0F0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/**
+ * -----------------------------------------------------------------------------
+ * $BREAKPOINTS
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $NOT
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $REM
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * Useful mixin to assist with using REM units with a PX fallback.
+ * Mixin is courtesy of Hugo Giraudel
+ * http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+ *
+ * Example usage is `@include rem(font-size, 1.6rem);`
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $BODY
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * Styles for the body element.
+ */
+body {
+  width: 100%;
+  height: 100%;
+  color: #292623;
+  background: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $FONTS
+* -----------------------------------------------------------------------------
+*/
+/**
+* -----------------------------------------------------------------------------
+* $FOOTER
+* -----------------------------------------------------------------------------
+*/
+footer {
+  padding: 24px;
+  text-align: center;
+  color: #292623;
+  background: #00FF78;
+}
+footer a {
+  color: #292623;
+  font-weight: 700;
+}
+footer a:hover, footer a:active {
+  color: #37332f;
+}
+footer p {
+  margin-bottom: 12px;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $HEADER
+* -----------------------------------------------------------------------------
+*/
+header {
+  padding: 24px;
+  background: #2f2b28;
+  -webkit-box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+header a {
+  color: #FFFFFF;
+}
+header img {
+  max-width: 120px;
+}
+header ul {
+  vertical-align: middle;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $HEADING
+* -----------------------------------------------------------------------------
+*/
+/**
+ * Styles for the `h1` to `h6` elements.
+ */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin-bottom: 21.6px;
+}
+
+h3 {
+  margin-bottom: 19.2px;
+}
+
+h4 {
+  margin-bottom: 16.8px;
+}
+
+h5 {
+  margin-bottom: 14.4px;
+}
+
+h6 {
+  margin-bottom: 12px;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $HR
+* -----------------------------------------------------------------------------
+*/
+hr {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.15);
+}
+.background--white hr {
+  color: #292623;
+  border-color: #292623;
+  background: #292623;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $HTML
+* -----------------------------------------------------------------------------
+*/
+/**
+* Styles for the body element.
+*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $IMAGE
+ * -----------------------------------------------------------------------------
+ */
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $LINKS
+* -----------------------------------------------------------------------------
+*/
+a {
+  padding-bottom: 3px;
+  transition: 0.4s all ease;
+  text-decoration: none;
+  color: #292623;
+}
+a:hover {
+  color: #00b354;
+}
+
+.link--signup {
+  padding: 6px 12px;
+  transition: 0.4s all ease;
+  color: #292623;
+  border: 2px solid #292623;
+}
+@media (min-width: 768px) {
+  .link--signup {
+    padding: 12px 24px;
+  }
+}
+.link--signup:hover {
+  color: #00FF78;
+  background: #37332f;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $MAIN
+* -----------------------------------------------------------------------------
+*/
+main {
+  padding: 24px 12px;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $NAV
+* -----------------------------------------------------------------------------
+*/
+nav ul {
+  padding: 0;
+  padding-right: 24px;
+  padding-left: 24px;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  nav ul li {
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $PARAGRAPH
+* -----------------------------------------------------------------------------
+*/
+p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $SECTION
+* -----------------------------------------------------------------------------
+*/
+section {
+  padding: 24px 12px;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $SPAN
+* -----------------------------------------------------------------------------
+*/
+span {
+  font-size: 18px;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $UL
+* -----------------------------------------------------------------------------
+*/
+ul {
+  margin: 0;
+}
+
+.cta {
+  background: #292623;
+  padding: 24px;
+  text-align: center;
+}
+
+.cta__button {
+  color: #00FF78;
+  border: 1px solid #00FF78;
+  max-width: 360px;
+  padding: 24px;
+  width: 100%;
+  margin: 0 auto;
+  transition: 0.4s all ease;
+}
+.cta__button:hover {
+  background: #00FF78;
+  color: #292623;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $EVENTS
+ * -----------------------------------------------------------------------------
+ */
+.events nav {
+  text-align: center;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .events nav {
+    text-align: left;
+  }
+}
+.events img[src$=".svg"] {
+  width: 20%;
+  max-width: 50px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+@media (min-width: 768px) {
+  .events img[src$=".svg"] {
+    margin-left: 0;
+    margin-right: 24px;
+  }
+}
+
+.events__post {
+  border-bottom: 1px solid #292623;
+}
+.events__post:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.events__logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $FOLD
+* -----------------------------------------------------------------------------
+*/
+.fold {
+  max-width: 100% !important;
+  height: 90%;
+  padding: 5%;
+}
+
+.fold--home {
+  padding-top: 30%;
+  padding-bottom: 30%;
+  text-align: center;
+  background: url(img/index-fold.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .fold--home {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .fold--home {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+.fold--home img {
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 48px;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $MAPS
+ * -----------------------------------------------------------------------------
+ */
+/** Code from https://getflywheel.com/layout/how-to-add-a-responsive-google-map-in-wordpress/ */
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin-bottom: 24px;
+}
+
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.tablepress .column-2, .tablepress .column-4 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tablepress .column-2, .tablepress .column-4 {
+    display: table-cell;
+  }
+}
+.tablepress .dataTables_info {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tablepress .dataTables_info {
+    display: block;
+  }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $TEXT
+ * -----------------------------------------------------------------------------
+ */
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $WRAPPER
+ * -----------------------------------------------------------------------------
+ */
+.wrapper {
+  width: 100%;
+  color: #292623;
+  background: #FFFFFF;
+}
+.wrapper > * {
+  max-width: 95%;
+  margin: 0 auto;
+}
+.wrapper > *:not(header):not(footer) {
+  max-width: 95%;
+}
+@media (min-width: 768px) {
+  .wrapper > *:not(header):not(footer) {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper > *:not(header):not(footer) {
+    max-width: 40%;
+  }
+}
+.wrapper main, .wrapper .events__post {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .wrapper main, .wrapper .events__post {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $BACKGROUND
+ * -----------------------------------------------------------------------------
+ */
+.background--dark {
+  color: #FFFFFF;
+  background: #292623;
+}
+.background--dark a {
+  color: #FFFFFF;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $INPUTS
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $META
+ * -----------------------------------------------------------------------------
+ */
+.date, .author, .comments {
+  display: none;
+}
+
+/**
+* -----------------------------------------------------------------------------
+* $SELECTION
+* -----------------------------------------------------------------------------
+*/
+::selection {
+  background: rgba(0, 255, 120, 0.8);
+  color: #292623;
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background: rgba(0, 255, 120, 0.8);
+  color: #292623;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: rgba(0, 255, 120, 0.8);
+  color: #292623;
+  text-shadow: none;
+}
+
+/*# sourceMappingURL=style.css.map */
